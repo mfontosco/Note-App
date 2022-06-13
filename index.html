@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <section class="sidebar">
+            <aside class="sidebar-container">
+                    <button id="sidebar-add-btn">Add</button>
+                    <ul>
+                        <li><span><i class="fa-solid fa-pencil-square" aria-hidden="true"></i></span>All notes</li>
+                        <li><span><i class="fas fa-star"></i></span class="favourite">Favourites</li>
+                        <li><span><i class="fas fa-"></i></span><hr></li>
+                        <li><span><i class="fa fa-tag" aria-hidden="true"></i></span>Tags</li>
+                        <li><span ><i id="personal" class="fa-solid fa-circle-dot"></i></span>Personal</li>
+                        <li><span><i id="work" class="fa-solid fa-circle-dot"></i></span>Work</li>
+                        <li><span><i id="social" class="fa-solid fa-circle-dot"></i></span>Social</li>
+                        <li><span><i id="important" class="fa-solid fa-circle-dot"></i></span>Important</li>
+                    </ul>
+            </aside>
+            
+        </section> 
+        <div class="main-container">
+            <div class="main">
+                <article>
+                    <div class="post">
+                        <h2>Meeting with Kelly</h2>
+                        <h4>11/01/2020</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque molestiae quos nobis modi, reiciendis nulla!</p>
+                      <div class="icons">
+                        <div class="left-icons">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                          </div>
+                          <div class="right-icon">
+                            <div class="dropd"> </div>
+                            <div class="dot-icons">
+                                <i id="personal" class="fa-solid fa-circle-dot"></i>
+                                <i id="work" class="fa-solid fa-circle-dot"></i>
+                                <i id="social" class="fa-solid fa-circle-dot"></i>
+                                <i id="important" class="fa-solid fa-circle-dot"></i>
+                              </div>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                          </div>
+                          </div>
+                      </div>
+                </article>
+                
+               
+        </div>
+       
+        <div class="blog-container">       
+            <div class="action">
+                <i class="fa fa-times"></i>
+                <div class="title-input">
+                    <input type="text" class="title" placeholder="Title">
+                    <!-- <input type="date" name="" id=""> -->
+                    <!-- <i class="fa-solid fa-calendar-days"></i> -->
+                </div>
+                <div class="text-area">
+                  <textarea name="" id="text" cols="30" rows="10" placeholder="Description"></textarea>
+              </div>
+              <div class="blog-footer">
+                <div class="dot-icons">
+                    <i id="personal" class="fa-solid fa-circle-dot"></i>
+                    <i id="work" class="fa-solid fa-circle-dot"></i>
+                    <i id="social" class="fa-solid fa-circle-dot"></i>
+                    <i id="important" class="fa-solid fa-circle-dot"></i>
+                  </div>
+                  <div class="action-btn">
+                      <button id="discard"><i class="fa-regular fa-trash-can"></i>Discard</button>
+                      <button id="add">ADD</button>
+                  </div>
+              </div>
+             
+            </div>
+        </div>
+        </div>    
+        
+    </div>
+ 
+    <script src="./js/app.js"></script>
+</body>
+</html>

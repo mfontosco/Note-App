@@ -1,0 +1,273 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    width: 20%;
+    height: 100vh;
+}
+.main-container{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar>.sidebar-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    left:20px;
+
+    
+}
+.sidebar>.sidebar-container>button{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 5px 15px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+}
+span{
+    margin-right: 5px;
+}
+ul li {
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+}
+.main-container{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    
+}
+ul li:hover{
+
+    padding: 10px;
+    border: none;
+    background-color: azure;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ul li>span>.fa-star{
+color: yellow;
+}
+.favourite{
+    color: yellow;
+}
+.main {
+    position: relative;
+    display: flex;
+    top: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.main article {
+    flex-wrap: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.main article .post{
+    position: relative;
+    flex: 1;
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    border-bottom: 4px solid blue;
+}
+.main article .post h2,.main article .post h4,.main article .post p{
+    margin-bottom: 5px;
+}
+.icons{
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+   margin-top: 25px;
+}
+.icons>.left-icons{
+    margin-left: 0;
+}
+.icons .right-icon{ 
+    margin-left: 100px;
+}
+.blog-container{
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 15;
+    top:20px;
+    left: 300px;
+    display: none;
+    
+     /* bottom: 0;
+    */
+}
+.blog-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot-icons{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+}.right-icon .dot-icons{
+    display: none;
+}
+.dot-icons i{
+    margin-right: 5px;
+}
+#personal{
+color: blue;
+margin-left: 5px;
+}
+#work{
+    color: yellow;
+    margin-left: 2px;
+ }
+ #social{
+ color:purple;
+ margin-left: 2px;
+}
+#important{
+ color: pink;
+ margin-left: 3px;
+}
+.showblog-container{
+    display: block;
+}
+.action{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.fa-times{
+    position:absolute;
+    right: 0;
+    top: -5;
+}
+.action>.title-input{
+    width: 100%;
+    
+}
+.action>.title-input>.title{
+width: 90%;
+margin: 20px auto;
+border-radius: 5px;
+border: 1px solid gray;
+padding: 10px;
+}
+.action>.text-area>textarea{
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+.action-btn{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.action-btn>#discard>i{
+margin-right: 5px;
+}
+.action-btn>button{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+     padding: 7px 15px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+}
+.alert{
+    width: 50%;
+    margin: 2px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.alert-danger{
+    background-color: red;
+}
+
+.alert-success{
+    background-color: green;
+}
+.option{
+    width: 100px;
+    height: 200px;
+
+}
+.dropdown{
+    width: 110px;
+    height: 260px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    z-index: 12;
+    text-align: center;
+   
+
+}
+.dropdown a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:520px) {
+    .main article .post{
+    margin-left: 10px;
+    }
+    .main-container{
+        margin-left: 70px;
+    }
+    .blog-container{
+        width: 300px;
+        height: 350px;
+        background-color: white;
+        margin-top: 10px;
+        border-radius: 5px;
+        position: fixed;
+        z-index: 15;
+        top:20px;
+        left: 80px;
+
+        
+         /* bottom: 0;
+        */
+    }
+}
